@@ -19,45 +19,10 @@ body {
   height: 100%;
   line-height: 1.5;
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
 }
 
-.container {
-  max-width: 580px;
-  margin: 0 auto;
-  background-color: var(--indigo50);
-  padding: var(--space-xxxlarge);
-  border-radius: var(--border-radius-xlarge);
-}
 
 img {
   max-width: 100%;
 }
-
-.button {
-  text-decoration: none;
-}
-
-/* .main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.draggable-item {
-  margin-left: 32px;
-  margin-bottom: 32px;
-  width: 112px;
-  height: 112px;
-  max-width: 112px;
-  max-height: 112px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 18px;
-  font-family: sans-serif;
-  cursor: grab;
-} */

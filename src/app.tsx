@@ -25,7 +25,7 @@ const App: React.FC = () => {
         case "component":
           await miro.board.createShape({
             content:
-              "<p><strong>Component Name</strong></p>Brief one or two sentence description of the component's responsibility.",
+              "<p><strong>Component's Name</strong></p>Brief description of the component's responsibility.",
             shape: "rectangle",
             style: {
               color: COLOR_TEXT,
@@ -65,15 +65,78 @@ const App: React.FC = () => {
         />
       </div>
       <div className="cs4 ce12">
-        <p>
+        <p className="p-small">
           <strong>Component</strong>
           <br />
-          Part of the system with some distinct responsibility.
+          Part of the system with some distinct responsibility. A function,
+          class, module, or even the whoile system iteself can be modeled as a
+          component.
         </p>
       </div>
+
+      <div className="cs1 ce3">
+        <img
+          src="/src/assets/srml-incoming-message.png"
+          draggable={false}
+          className="miro-draggable draggable-item"
+          data-srml="incoming-message"
+          title="Incoming message"
+        />
+      </div>
+      <div className="cs4 ce12 ">
+        <p className="p-small">
+          <strong>Incoming Message</strong>
+          <br />A message handled by the component. The set of incoming messages
+          makes up the external interface of the of the component.
+        </p>
+      </div>
+
+      <div className="cs1 ce3">
+        <img
+          src="/src/assets/srml-outgoing-message.png"
+          draggable={false}
+          className="miro-draggable draggable-item"
+          data-srml="outgoing-message"
+          title="Outgoing message"
+        />
+      </div>
+      <div className="cs4 ce12 ">
+        <p className="p-small">
+          <strong>Outgoing Message</strong>
+          <br />A message sent out by the component. The other component is now
+          a dependency of this component.
+        </p>
+      </div>
+
+      <div className="cs1 ce3">
+        <img
+          src="/src/assets/srml-data.png"
+          draggable={false}
+          className="miro-draggable draggable-item"
+          data-srml="data"
+          title="Data"
+        />
+      </div>
+      <div className="cs4 ce12 ">
+        <p className="p-small">
+          <strong>Data</strong>
+          <br />A slice of data. Use this element when data needs to be
+          represented outside components and messages.
+        </p>
+      </div>
+
       <div className="cs1 ce12">
-        <p>
-          Drag an SRML element to the board and drop where it should appear.
+        <hr />
+        <p className="p-small">
+          Drag an element where it should be placed on the board. For more info
+          on this notation, please visit{" "}
+          <a
+            href="https://srml.dev/spec"
+            target="_blank"
+            className="link link-text"
+          >
+            srml.dev/spec
+          </a>
         </p>
       </div>
     </div>
